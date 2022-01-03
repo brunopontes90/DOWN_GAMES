@@ -4,7 +4,8 @@
   "description": "create table jogos (\r     jogo_id int auto_increment,\r     nome varchar(255) not null,\r     descricao varchar(255),\r     imagem longblob not null,\r   \tarquivo longblob not null,\r   \tprimary key (jogo_id)\r );",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon start"
   },
   "repository": {
     "type": "git",
