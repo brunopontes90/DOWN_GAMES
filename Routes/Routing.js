@@ -11,7 +11,7 @@ function Router()
 
     application.post('/enviar', (req, res) => 
     {
-        res.send('Requisição Enviada!');
+        res.send('Requisição Enviada!!');
     });
 
     application.put('/atualizar', (req, res) => 
