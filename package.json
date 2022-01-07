@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/brunopontes90/DOWN_GAMES/issues"
   },
-  "homepage": "https://github.com/brunopontes90/DOWN_GAMES#readme"
+  "homepage": "https://github.com/brunopontes90/DOWN_GAMES#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0"
+  }
 }
