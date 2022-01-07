@@ -27,7 +27,7 @@ function Router()
         con.query(selecionar, function(err, result, fields)
         {
             if(err) throw err;
-            console.log(result);
+            console.log('Consulta realizada!!');
             res.send(result);
         });
     });
@@ -43,7 +43,7 @@ function Router()
         });
     });
 
-    application.put('/atualizar', (req, res) => 
+    application.put('/atualizar/jogo_id', (req, res) => 
     {
         const atualizar = "UPDATE jogos SET nome = :nome, descricao = :descricao, imagem = :imagem, arquivo = :arquivo WHERE jogo_id = jogo_id";
         con.query(atualizar, function(err, result)
@@ -54,7 +54,7 @@ function Router()
         });
     });
 
-    application.delete('/deletar', (req, res) => 
+    application.delete('/deletar/jogo_id', (req, res) => 
     {
         const deletar = "DELETE FROM jogos WHERE jogo_id = jogo_id";
         con.query(deletar, function(err, result, fields)

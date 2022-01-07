@@ -8,5 +8,6 @@ create table jogos (
     descricao varchar(255),
     imagem longblob not null,
   	arquivo longblob not null,
+    admin enum('0', '1') not null,
   	primary key (jogo_id)
 );
